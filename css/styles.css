@@ -1,0 +1,60 @@
+#title {
+    background: linear-gradient(300deg, #da0b3f, #2f08da, #db07d1);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#about, #contact, #footer{
+  background-color: #0f61cc;
+  text-align: center;
+}
+
+.about_me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;    
+    background-color: #0f61cc;
+}
+
+.contact_me{
+    display: flex;
+    column-gap: 200px;
+    justify-content: center;
+    margin-right: 170px;
+    border: none;
+    background-color: #0f61cc;
+    font-size:24px;
+}
+
+a, h1, h3, img, p, pre{
+  color: white;
+}
+
+img {
+  margin-left:100px; 
+  width: 800px; 
+  height: 600px;
+}
+
+.card-card-body {
+  color: white;
+  text-align: center;
+}
+
+.btn-btn-primary {
+  background: transparent;
+  margin: 50%;
+  color: white;
+}
