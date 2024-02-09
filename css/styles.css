@@ -1,8 +1,14 @@
+html {
+    background-color: #0f61cc;
+    width: 100%;
+}
+
 #title {
     background: linear-gradient(300deg, #da0b3f, #2f08da, #db07d1);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
-  }
+    position: relative;
+}
 
 @keyframes gradient-animation {
     0% {
@@ -14,38 +20,77 @@
     100% {
       background-position: 0% 50%;
     }
-  }
-
-#about, #contact, #footer{
-  background-color: #0f61cc;
-  text-align: center;
-}
-
-.about_me {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;    
-    background-color: #0f61cc;
 }
 
 .contact_me{
     display: flex;
     column-gap: 200px;
     justify-content: center;
-    margin-right: 170px;
     border: none;
     background-color: #0f61cc;
     font-size:24px;
+}
+
+.about_me {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;    
+  background-color: #0f61cc;
+}
+
+#about {
+    background-color: #0f61cc;
+    width: 100%;
+    text-align: center;
+}
+
+#contact, #footer { 
+  background-color: #0f61cc;
+  width: 100%; 
+  text-align: center;
 }
 
 a, h1, h3, img, p, pre{
   color: white;
 }
 
-img {
-  margin-left:100px; 
-  width: 800px; 
-  height: 600px;
+@media (max-width: 480px) {
+  h3 {
+      font-size: 9px;
+      color: white;
+  }
+  #tech_words, #vol_words, #golf_words, #hobby_words{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      font-size: 7px;
+  }
+  .contact_me{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    border: none;
+    background-color: #0f61cc;
+    font-size:12px;
+}
+}
+
+#tech_words, #golf_words{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+  }
+
+#vol_words, #hobby_words{
+      display: flex;
+      align-items: center;;
+      justify-content: center;
+      font-size: 10px;
+}
+
+#tech_pic, #vol_pic, #golf_pic, #hobby_pic{
+  width: 100%;
 }
 
 .card-card-body {
@@ -57,4 +102,8 @@ img {
   background: transparent;
   margin: 50%;
   color: white;
+}
+
+body {
+  overflow-x: hidden;
 }
